@@ -10,20 +10,12 @@ struct student {
 };
 
 int main() {
-	student Carl;
-	Carl.Age = 17;
-	Carl.Name = "Carl";
-	Carl.Drink = "juice";
-	student Mark;
-	Mark.Age = 21;
-	Mark.Name = "Mark";
-	Mark.Drink = "tea";
-	student Matthew;
-	Matthew.Age = 18;
-	Matthew.Name = "Matthew";
-	Matthew.Drink = "coffee";
+	student masSt[3];
+	masSt[0] = { 22, "Mark", "coffee" };
+	masSt[1] = { 32, "Maks", "tea" };
+	masSt[2] = { 23, "Den", "white Tea" };
+	for (int i = 0; i < 3; ++i) {
+		cout << masSt[i].Name << " " << masSt[i].Age << " " << masSt[i].Drink << endl;
 
-	cout << Carl.Name << " " << Carl.Age << " " << Carl.Drink << endl;
-	cout << Mark.Name << " " << Mark.Age << " " << Mark.Drink << endl;
-	cout << Matthew.Name << " " << Matthew.Age << " " << Matthew.Drink << endl;
+	}
 }
